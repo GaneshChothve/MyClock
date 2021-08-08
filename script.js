@@ -11,9 +11,10 @@ function rotation() {
     let s= d.getSeconds()
     let h= d.getHours()
     let m= d.getMinutes()
+    let k= parseInt(h*30) + parseInt(m/4)
 
     sec.style.transform= 'rotate('+s*6+'deg)'
     min.style.transform= 'rotate('+m*6+'deg)'
-    hourel.style.transform= 'rotate('+h*30+m/2+'deg)'
+    hourel.style.transform= 'rotate('+k+'deg)'
 
 }
