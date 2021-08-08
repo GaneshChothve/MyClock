@@ -11,7 +11,7 @@ function rotation() {
     let s= d.getSeconds()
     let h= d.getHours()
     let m= d.getMinutes()
-    let k= parseInt(h*30) + parseInt(m/4)
+    let k= parseInt(h*30) + parseInt(m/2)
 
     sec.style.transform= 'rotate('+s*6+'deg)'
     min.style.transform= 'rotate('+m*6+'deg)'
